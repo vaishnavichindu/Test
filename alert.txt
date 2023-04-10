@@ -1,0 +1,134 @@
+public void scrolltoElement(WebElement element) {
+		
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
+	}
+public void scrollbywindow(int a,int b) {
+		
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,500)");
+	}
+Alert objalert = driver.switchto().alert();
+objalert.accept();
+objalert.dismiss();
+objalert.gettext();
+objalert.sendkeys("sssj");
+
+public void elementclick(WebElement element) {
+		
+		 // Create a reference
+	    JavascriptExecutor js = (JavascriptExecutor)driver;
+	   
+	    // Call the JavascriptExecutor methods
+	    js.executeScript("arguments[0].click();", element);
+	}
+
+
+ttps://www.guru99.com/xpath-
+Absolutex path
+/html/body/header/div[2]/div/div/nav/div/ul/li[6]/a
+
+
+/html/body/header/div[2]/div/div/nav/div/ul/li[6]/a
+
+
+
+
+
+Relative xpath
+//tagname[property]
+
+//ul[@class='navbar-nav']/li[6]/a
+
+
+
+//a[contains(@id,'alert-modal')]
+//a[@id='alert-modal']
+//a[@class='nav-link' and @id='alert-modal']
+//label[starts-with(@id,'message')]
+
+//*[@type='text']//following::input
+//ul[@class='navbar-nav']/li[6]/a
+//ul[@class='navbar-nav']//following::li[6]/a
+//a[contains(@id,'alert-modal')]//ancestor::div[1]
+//ul[@class='navbar-nav']//child::li[6]/a
+
+
+implicit wait
+WebDriverWait wait=new WebDriverWait(driver, 20);
+wait.until(ExpectedConditions.visibilityOfElementLocated(inputfoem));
+FluentWait
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
+			.withTimeout(30, TimeUnit.SECONDS) 			
+			.pollingEvery(5, TimeUnit.SECONDS) 			
+			.ignoring(NoSuchElementException.class);
+
+
+	WebElement clickseleniumlink = wait.until(new Function<WebDriver, WebElement>(){
+	
+		public WebElement apply(WebDriver driver ) {
+			return driver.findElement(By.xpath("/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i"));
+		}
+	});
+
+implicit wait
+WebDriverWait wait=new WebDriverWait(driver, 20);
+wait.until(ExpectedConditions.visibilityOfElementLocated(inputfoem));
+inputform.click();
+
+alertIsPresent()
+elementSelectionStateToBe()
+elementToBeClickable()
+elementToBeSelected()
+frameToBeAvaliableAndSwitchToIt()
+invisibilityOfTheElementLocated()
+invisibilityOfElementWithText()
+presenceOfAllElementsLocatedBy()
+FluentWait
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
+			.withTimeout(30, TimeUnit.SECONDS) 			
+			.pollingEvery(5, TimeUnit.SECONDS) 			
+			.ignoring(NoSuchElementException.class);
+
+
+	WebElement clickseleniumlink = wait.until(new Function<WebDriver, WebElement>(){
+	
+		public WebElement apply(WebDriver driver ) {
+			return driver.findElement(By.xpath("/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i"));
+		}
+	});
+
+
+@DataProvider(name="SearchProvider")
+  public Object[][] getDataFromDataprovider(){
+  return new Object[][] 
+  	{
+          { "Guru99", "India" },
+          { "Krishna", "UK" },
+          { "Bhupesh", "USA" }
+      };
+
+  }
+
+
+Mven install
+selenium installation
+browser launch-Chrome
+click
+sendkeys
+radiobutton
+checkbox
+dropdown
+alert
+screenshot
+Actions[Drag and drop]
+Locators
+POM with and without pagefactory
+TestNg
+Assertion- Hard/Soft
+Javascript:- Scroll,Click
+Xpath
+pop up
+waits in selenium
+dataprovider
+
+
+
