@@ -11,6 +11,7 @@ objalert.accept();
 objalert.dismiss();
 objalert.gettext();
 objalert.sendkeys("sssj");
+hiiii;
 
 public void elementclick(WebElement element) {
 		
